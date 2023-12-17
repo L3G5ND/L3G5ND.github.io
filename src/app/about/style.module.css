@@ -1,0 +1,145 @@
+.content-holder {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+    color: rgb(172, 172, 172);
+}
+
+.content {
+    width: 50%;
+    padding-bottom: 4rem;
+}
+
+.intro-wave {
+    display: inline-block;
+    position: relative;
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: 8px;
+}
+
+.intro-wave img {
+    -webkit-user-drag: none;
+}
+
+.role {
+    margin-top: .8rem;
+    color: rgb(228, 228, 228);
+    font-size: 2rem;
+}
+
+.main {
+    margin-top: .8rem;
+}
+
+.text-link {
+    color: rgb(182, 88, 88)
+}
+
+.about-nav {
+    display: flex;
+}
+
+.about-nav-item {
+    padding: 10px 15px;
+    margin-top: 15px;
+    margin-right: 10px;
+    font-size: 1.3rem;
+    background-color: rgb(255, 71, 71);
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    transition: all .2s;
+}
+
+.about-nav-item:hover {
+    background-color: rgb(255, 109, 109);
+}
+
+.bonus-holder {
+    display: flex;
+    justify-content: end;
+    margin-left: 130px;
+}
+
+.bonus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 20px;
+    background-color: rgb(48, 48, 48);
+}
+
+.bonus-image {
+    position: relative;
+    height: 12rem;
+    width: 12rem;
+}
+
+.bonus p {
+    margin-top: 10px;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact-item-holder {
+    padding: 5px;
+}
+
+.contact-item {
+    display: flex;
+    width: 8rem;
+}
+
+.contact-item-image {
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    opacity: .7;
+    filter: brightness(0) invert(1);
+}
+
+.contact-item span {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1400px) {
+    .content {
+        width: 70%;
+    }
+
+    .about {
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px) {
+    .content {
+        font-size: 1.2rem;
+    }
+
+    .intro div {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    
+    .role {
+        font-size: 1.6rem;
+    }
+
+    .about {
+        width: 90%;
+    }
+}

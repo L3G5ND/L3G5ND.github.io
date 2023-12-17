@@ -1,0 +1,182 @@
+.content-holder {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 6rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.header {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.divider {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-color: rgb(35, 38, 55);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.library-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-auto-rows: 13rem;
+    grid-gap: .6rem;
+    margin-top: 1rem;
+}
+
+.library {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(35, 38, 55);
+    border-radius: 10px;
+}
+
+.library-text {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.library-name {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+.library-description {
+    margin-top: .3rem;
+    font-size: 1rem;
+}
+
+.library-link-holder {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: .5rem;
+}
+
+.library-link {
+    padding: .5rem 1rem;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.library-link:hover {
+    color: rgb(167, 167, 167);
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project {
+    height: 25rem;
+    width: 21rem;
+    background-color: rgb(35, 38, 55);
+}
+
+.project-preview-holder {
+    height: 21rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-preview {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(35, 38, 55);
+    transition: all .1s;
+    -webkit-user-drag: none;
+}
+
+.project-preview img {
+    -webkit-user-drag: none;
+}
+
+.project-preview:hover {
+    transform: scale(1.1);
+}
+
+.project-text-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    z-index: 2;
+}
+
+.project-text {
+    font-size: 1.2rem;
+}
+
+.project-description {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-auto-rows: 3.5rem;
+    grid-gap: .6rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(35, 38, 55);
+    border-radius: 10px;
+}
+
+.skill-link {
+    width: 100%;
+}
+
+.skill-name {
+    font-size: 1.3rem;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        margin-top: 4rem;
+    }
+
+    .project-list {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+

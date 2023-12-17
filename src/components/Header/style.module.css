@@ -1,0 +1,137 @@
+.header {
+    position: fixed;
+    height: var(--header-height);
+    width: 100%;
+    background-color: rgb(24, 24, 34);
+    z-index: 1;
+    user-select: none;
+}
+
+.header-middle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--header-height);
+    width: 100%;
+}
+
+.contact {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 2.4rem;
+    padding: .3rem 1.5rem;
+    margin: 0 10px;
+    border-radius: 6px;
+    transition: all .2s;
+    background-color: rgb(255, 71, 71);
+    color: rgb(255, 255, 255);
+    -webkit-user-drag: none;
+}
+
+.contact:hover {
+    background-color: rgb(255, 109, 109);
+}
+
+.item {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: .3rem 1rem;
+    font-size: 2.1rem;
+    border-radius: 6px;
+    color: rgb(238, 238, 238);
+    transition: all .1s;
+    -webkit-user-drag: none;
+}
+
+.item:hover {
+    color: rgb(255, 255, 255);
+}
+
+.item span {
+    margin-top: 7px;
+}
+
+.header-right {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: var(--header-height);
+    right: 0;
+}
+
+.menu-icon {
+    position: absolute;
+    display: none;
+    height: 2.2rem;
+    width: 2.5rem;
+    margin-right: 1.5rem;
+    z-index: 3;
+    opacity: .7;
+    filter: brightness(0) invert(1);
+}
+
+.menu-icon img {
+    -webkit-user-drag: none;
+}
+
+.menu-holder {
+    position: fixed;
+    display: grid;
+    grid-template-rows: 0fr;
+    width: 100%;
+    z-index: 2;
+    transition-timing-function: linear;
+    transition-duration: .3s;
+}
+
+.menu-header {
+    height: var(--header-height);
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+}
+
+.menu {
+    display: none;
+    overflow: hidden;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    font-size: 2rem;
+    background-color: rgb(19, 19, 19);
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: rgb(24, 24, 24);
+    -webkit-user-drag: none;
+}
+
+.menu-item:hover {
+    color: rgb(212, 212, 212);
+}
+
+@media (max-width: 1000px) {
+    .header {
+        background-color: transparent;
+    }
+
+    .header-middle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+    }
+}
