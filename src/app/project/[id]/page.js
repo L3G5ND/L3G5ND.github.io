@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 }
 
 export default function Project({params}) {
-    let project = Config.Projects[params.id]
+    let project = Config.Projects[Number(params.id)]
     return (
         <div className={styles["content-holder"]}>
             <div className={styles["content"]}>
