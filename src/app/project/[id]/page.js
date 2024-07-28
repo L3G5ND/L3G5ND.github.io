@@ -1,6 +1,14 @@
 import Config from "@config"
 import styles from "./style.module.css"
 
+export async function generateStaticParams() {
+    let staticPages = []
+    for (let i = 0; Config.Projects.length;) {
+        staticPages.push({ id: i })
+    }
+    return staticPages
+}
+
 export default function Project({params}) {
     let project = Config.Projects[params.id]
     return (
