@@ -26,7 +26,7 @@ export default function About() {
                         Roblox is what got me into programming and is why I decided to spend most of my time programming with Roblox Lua.
                     </p>
                     <p className={styles["main"]}>
-                        Over my time as a programmer, I can confidently say finding something I can't do at a professional level is nearly impossible.
+                        Over my time as a programmer, I can confidently say finding something I can&apos;t do at a professional level is nearly impossible.
                         I have worked on a variety of <Link className={styles['text-link']}href="/portfolio">projects and libraries</Link> on Roblox.
                         All of the libraries I&apos;ve created are open-source for anyone to use.
                     </p>
