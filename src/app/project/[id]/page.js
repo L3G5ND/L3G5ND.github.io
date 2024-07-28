@@ -1,9 +1,13 @@
 "use client"
 
 import Config from "@config"
-import Image from 'next/image'
-import Link from "next/link"
 import styles from "./style.module.css"
+
+export async function generateStaticParams() {
+    return {
+        id: 1
+    }
+}
 
 export default function Project({params}) {
     let project = Config.Projects[params.id]
