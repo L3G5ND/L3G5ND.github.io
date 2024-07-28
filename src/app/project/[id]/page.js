@@ -1,5 +1,3 @@
-"use client"
-
 import Config from "@config"
 import styles from "./style.module.css"
 
