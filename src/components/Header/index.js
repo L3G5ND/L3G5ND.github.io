@@ -14,7 +14,7 @@ function Item(props) {
     )
 }
 
-export default function() {
+export default function Header() {
     const pathName = usePathname()
     const [menuOpen, setMenuOpen] = useState(false)
     const menuStyle = { "gridTemplateRows": menuOpen && "1fr" || "0fr" }

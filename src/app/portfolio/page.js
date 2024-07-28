@@ -2,7 +2,7 @@ import Config from "@config"
 import Image from 'next/image'
 import styles from "./style.module.css"
 
-export default function() {
+export default function Portfolio() {
     return (
         <>
             <div className={styles["content-holder"]}>
@@ -11,7 +11,7 @@ export default function() {
                     <div className={styles["library-list"]}>
                         {Config.Libraries.map((library, index) => {
                             return (
-                                <div className={styles["library"]}>
+                                <div key={index} className={styles["library"]}>
                                     <div className={styles["library-text"]}>
                                         <span className={styles["library-name"]}>{library.name}</span>
                                         <span className={styles["library-description"]}>{library.description}</span>
@@ -28,7 +28,7 @@ export default function() {
                     <div className={styles["project-list"]}>
                         {Config.Projects.map((project, index) => {
                             return (
-                                <div className={styles["project"]}>
+                                <div key={index} className={styles["project"]}>
                                     <div className={styles["project-preview-holder"]}>
                                         <a className={styles["project-preview"]} target="_blank" href={"/project/"+index || "/"}>
                                             <Image
@@ -46,11 +46,11 @@ export default function() {
                         })}
                     </div>
                     <div className={styles["divider"]}></div>
-                    <span className={styles["header"]}>3rd Party Libraries I Can Work With</span>
+                    <span className={styles["header"]}>Skills</span>
                     <div className={styles["skill-list"]}>
                         {Config.Skills.map((skill, index) => {
                             return (
-                                <a className={styles["skill"]} target="_blank" href={skill.link || "/"}>
+                                <a key={index} className={styles["skill"]} target="_blank" href={skill.link || "/"}>
                                     <span className={styles["skill-name"]}>{skill.name}</span>
                                 </a>
                             )

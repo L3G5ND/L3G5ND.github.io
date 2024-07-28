@@ -24,7 +24,7 @@
     margin-top: .5rem;
 }
 
-.email-link {
+.link {
     color: rgb(182, 88, 88);
     white-space: nowrap;
 }
@@ -37,27 +37,36 @@
     margin-top: 20px;
 }
 
-.contact-item-holder {
+.contact {
     padding: 5px;
 }
 
-.contact-item {
+.contact-link {
     display: flex;
     width: 8rem;
 }
 
-.contact-item-image {
+.contact-image {
     position: relative;
     height: 2rem;
     width: 2rem;
     opacity: .7;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(.7);
+    transition: all .1s;
 }
 
-.contact-item span {
+.contact-text {
     margin-left: 10px;
     font-size: 1.5rem;
-    color: rgb(172, 172, 172);
+    transition: all .1s;
+}
+
+.contact:hover .contact-text {
+    color: rgb(221, 221, 221);
+}
+
+.contact:hover .contact-image {
+    filter: brightness(0) invert(1);
 }
 
 @media (max-width: 1300px) {

@@ -1,11 +1,11 @@
-.content {
+.content-holder {
     height: 100%;
     width: 100%;
     color: rgb(172, 172, 172);
     user-select: none;
 }
 
-.welcome-holder {
+.content {
     position: absolute;
     display: flex;
     align-items: center;
@@ -47,14 +47,15 @@
     position: relative;
     height: 1.6rem;
     width: 3.4rem;
-    margin-top: 5px;
-    margin-left: 20px;
+    margin-top: 6px;
+    margin-left: 15px;
     filter: brightness(0) invert(.7);
     transition: all .1s;
 }
 
 .more:hover .more-arrow {
     filter: brightness(0) invert(.95);
+    width: 3.6rem;
 }
 
 .background-image {

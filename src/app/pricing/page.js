@@ -1,7 +1,7 @@
 import Config from "@config"
 import styles from "./style.module.css"
 
-export default function() {
+export default function Pricing() {
     return (
         <>
             <div className={styles["content-holder"]}>
@@ -10,7 +10,7 @@ export default function() {
                     <div className={styles["pricing-list"]}>
                         {Config.Services.map((service, index) => {
                             return (
-                                <div className={styles["pricing"]}>
+                                <div key={index} className={styles["pricing"]}>
                                     <div className={styles["pricing-left"]}>
                                         <span className={styles["pricing-tier"]}>{service.name}</span>
                                         <span className={styles["pricing-price"]}>{service.price}</span>

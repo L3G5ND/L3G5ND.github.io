@@ -1,6 +1,4 @@
 import Header from "@/components/Header"
-import Footer from "@/components/Footer"
-import styles from "./style.module.css"
 import './globals.css'
 import './default.css'
 

@@ -1,0 +1,22 @@
+.content-holder {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 3rem;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.left-text {
+    margin-right: 1.5rem;
+    padding-right: 1.5rem;
+    border-right-style: solid;
+    border-right-width: 2px;
+}

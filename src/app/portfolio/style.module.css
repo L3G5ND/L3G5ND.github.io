@@ -72,6 +72,7 @@
     padding: .5rem 1rem;
     font-size: 1.3rem;
     margin-top: 1rem;
+    transition: all .1s;
 }
 
 .library-link:hover {
@@ -97,6 +98,7 @@
     height: 21rem;
     width: 100%;
     overflow: hidden;
+    user-select: none;
 }
 
 .project-preview {
@@ -151,6 +153,7 @@
     padding-right: 1rem;
     background-color: rgb(35, 38, 55);
     border-radius: 10px;
+    transition: all .1s;
 }
 
 .skill-link {
@@ -159,6 +162,10 @@
 
 .skill-name {
     font-size: 1.3rem;
+}
+
+.skill:hover {
+    color: rgb(167, 167, 167);
 }
 
 @media (max-width: 1000px) {

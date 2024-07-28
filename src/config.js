@@ -1,25 +1,39 @@
-export default {
-    RobloxLink: "https://www.roblox.com/users/721686115/profile",
-    GithubLink: "https://github.com/L3G5ND",
-    DiscordLink: "https://github.com/L3G5ND",
-    TwitterLink: "https://github.com/L3G5ND",
+const config = {
     Email: "L3G5ND@L3G5ND.com",
-    Skills: [
+    Socials: [
         {
-            name: "Rojo",
-            link: "https://rojo.space/"
+            name: "Roblox",
+            image: "/roblox.png",
+            link: "https://www.roblox.com/users/721686115/profile"
         },
         {
-            name: "Knit",
-            link: "https://sleitnick.github.io/Knit/"
+            name: "Github",
+            image: "/github.png",
+            link: "https://github.com/L3G5ND"
         },
         {
-            name: "Datastore2",
-            link: "https://kampfkarren.github.io/Roblox/"
+            name: "Discord",
+            image: "/discord.png",
+            link: "https://discordapp.com/users/512795535552544806/"
         },
         {
-            name: "Roact",
-            link: "https://roblox.github.io/roact/"
+            name: "Twitter",
+            image: "/twitter.png",
+            link: "https://twitter.com/L3G5ND_"
+        }
+    ],
+    Services: [
+        {
+            name: "Small Feature",
+            price: "$20 - $50",
+        },
+        {
+            name: "Medium Feature",
+            price: "$50 - $100",
+        },
+        {
+            name: "Big Feature",
+            price: "$100+",
         }
     ],
     Libraries: [
@@ -46,50 +60,58 @@ export default {
     ],
     Projects: [
         {
-            name: "Vision",
-            image: "/roblox.png",
-            description: "An easy to use UI library for Roblox Lua.",
-            video: "https://www.youtube.com/embed/w7hcMmC7I30?si=mxrZDDg_7XnLtE5h"
+            name: "Maze AI",
+            image: "/maze-ai-project-thumbnail.png",
+            description: "A robot taught to not touch walls with AI.",
+            video: "https://www.youtube.com/embed/X-k0If2iBLk?si=hfyHyslfrIuiVd8r?vq=hd1080p"
         },
         {
-            name: "Roblox Profile",
-            image: "/twitter.png",
-            description: "Easily save/manipulate data to Roblox servers.",
-            video: "https://www.youtube.com/embed/w7hcMmC7I30?si=mxrZDDg_7XnLtE5h"
+            name: "Mirror",
+            image: "/mirror-project-thumbnail.png",
+            description: "A mirror made with a viewport frame.",
+            video: "https://www.youtube.com/embed/vX7UdVdmTQs?si=1EryoCKRwkfKyrmg?vq=hd1080p"
         },
         {
-            name: "Roblox Replicator",
-            image: "/discord.png",
-            description: "Allows for easy data replication across the Server-Client boundery.",
-            video: "https://www.youtube.com/embed/w7hcMmC7I30?si=mxrZDDg_7XnLtE5h"
+            name: "3d Engine",
+            image: "/3d-engine-project-thumbnail.png",
+            description: "A 3d Renderer for a 2d plane.",
+            video: "https://www.youtube.com/embed/Ah9izUfg_wg?si=cB5dzQfzsP3jp-pX?vq=hd1080p"
         },
         {
-            name: "Roblox Networker",
-            image: "/github.png",
-            description: "An easy to use Networking library for Roblox Lua.",
-            video: "https://www.youtube.com/embed/w7hcMmC7I30?si=mxrZDDg_7XnLtE5h"
-        }
+            name: "Basketball",
+            image: "/basketball-project-thumbnail.png",
+            description: "Basketball with realistic physics.",
+            video: "https://www.youtube.com/embed/_bv9daQsqTM?si=xgcd7NUBVGyaQbvY?vq=hd1080p"
+        },
+        {
+            name: "Camera Effects",
+            image: "/camera-effects-project-thumbnail.png",
+            description: "Camera CFrame manipulation effects.",
+            video: "https://www.youtube.com/embed/0Hj9grPULHA?si=RiqO7IhCZR79csrl?vq=hd1080p"
+        },
     ],
-    Services: [
+    Skills: [
         {
-            name: "Basic Game Feature",
-            price: "$25 - $50",
+            name: "Rojo",
+            link: "https://rojo.space/"
         },
         {
-            name: "Basic Game",
-            price: "$50 - $100",
+            name: "Roact",
+            link: "https://roblox.github.io/roact/"
         },
         {
-            name: "Big Game Feature",
-            price: "$50 - $100",
+            name: "Rodux",
+            link: "https://roblox.github.io/rodux/"
         },
         {
-            name: "Big Game",
-            price: "$100 - $250",
+            name: "Knit",
+            link: "https://sleitnick.github.io/Knit/"
         },
         {
-            name: "Huge Game",
-            price: "$250+"
+            name: "Datastore2",
+            link: "https://kampfkarren.github.io/Roblox/"
         },
-    ]
+    ],
 }
+
+export default config

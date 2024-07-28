@@ -19,41 +19,32 @@ function ContactItem(props) {
     )
 }
 
-export default function() {
+export default function Contact() {
     return (
         <>
             <div className={styles["content-holder"]}>
                 <div className={styles["content"]}>
                     <span className={styles["header"]}>Contact Me</span>
                     <span className={styles["text"]}>
-                        If you are interested in my work or have any questions, contact me via <a className={styles["email-link"]} href="mailto:L3G5ND@L3G5ND.com">e-mail</a>.
+                        If you are interested in my work or have any questions, contact me via <a className={styles["link"]} target="_blank" href="https://discordapp.com/users/512795535552544806/">discord</a>.
                     </span>
                     <ul className={styles['contact-list']}>
-                        <ContactItem
-                            name="Roblox"
-                            image="/roblox.png"
-                            path={Config.RobloxLink}
-                        />
-                        <ContactItem
-                            name="Discord"
-                            image="/discord.png"
-                            path={Config.DiscordLink}
-                        />
-                        <ContactItem
-                            name="Github"
-                            image="/github.png"
-                            path={Config.GithubLink}
-                        />
-                        <ContactItem
-                            name="Twitter"
-                            image="/twitter.png"
-                            path={Config.TwitterLink}
-                        />
-                        <ContactItem
-                            name="Email"
-                            image="/email.png"
-                            path={"mailto:" + Config.Email}
-                        />
+                        {Config.Socials.map((social, index) => {
+                            return (
+                                <li key={index} className={styles["contact"]}>
+                                    <a target="_blank" className={styles['contact-link']} href={social.link || '/'}>
+                                        <div className={styles['contact-image']}>
+                                            <Image
+                                                src={social.image}
+                                                fill={true}
+                                                alt={social.name}
+                                            />
+                                        </div>
+                                        <span className={styles['contact-text']}>{social.name}</span>
+                                    </a>
+                                </li>
+                            )
+                        })}
                     </ul>
                 </div>
             </div>

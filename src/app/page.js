@@ -5,8 +5,8 @@ import styles from "./style.module.css"
 export default function Home() {
     return (
         <>
-            <div className={styles['content']}>
-                <div className={styles['welcome-holder']}>
+            <div className={styles['content-holder']}>
+                <div className={styles['content']}>
                     <div className={styles['welcome']}>
                         <p className={styles["name"]}>L3G5ND</p>
                         <p className={styles["text"]}>
@@ -29,7 +29,8 @@ export default function Home() {
                         style={{objectFit: "cover"}}
                         src="/welcome-background.png"
                         fill={true}
-                        alt={"\"wave\""}
+                        unoptimized={true}
+                        alt="background"
                     />
                 </div>
             </div>
