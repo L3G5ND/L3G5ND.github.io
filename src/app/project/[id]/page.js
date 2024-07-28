@@ -3,7 +3,7 @@ import styles from "./style.module.css"
 
 export async function generateStaticParams() {
     let staticPages = []
-    for (let i = 0; Config.Projects.length;) {
+    for (let i = 0; i < Config.Projects.length; i++) {
         staticPages.push({ id: i })
     }
     return staticPages
