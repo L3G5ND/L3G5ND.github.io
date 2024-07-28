@@ -1,12 +1,6 @@
 import Config from "@config"
 import styles from "./style.module.css"
 
-export async function generateStaticParams() {
-    return {
-        id: 1
-    }
-}
-
 export default function Project({params}) {
     let project = Config.Projects[params.id]
     return (
