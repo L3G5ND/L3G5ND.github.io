@@ -29,7 +29,7 @@ export default function Header() {
         <>
             <div className={styles['header']}>
                 <div className={styles['header-left']}>
-                    L3G5ND's Portfolio
+                    L3G5ND&apos;s Portfolio
                 </div>
                 <div className={styles['header-middle']}>
                     <Item name="Home" path="/"></Item>
