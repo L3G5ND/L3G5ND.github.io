@@ -98,13 +98,19 @@
     filter: brightness(0) invert(1);
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1550px) {
     .content {
-        width: 70%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content-holder {
+        margin-top: 9rem;
     }
 
-    .about {
-        width: 70%;
+    .content {
+        width: 80%;
     }
 }
 
@@ -120,9 +126,5 @@
     
     .role {
         font-size: 1.6rem;
-    }
-
-    .about {
-        width: 90%;
     }
 }

@@ -1,7 +1,6 @@
 'use client'
  
 import { useState } from 'react'
-import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import Link from "next/link"
 import styles from "./style.module.css"
@@ -15,7 +14,6 @@ function Item(props) {
 }
 
 export default function Header() {
-    const pathName = usePathname()
     const [menuOpen, setMenuOpen] = useState(false)
     const menuStyle = { "gridTemplateRows": menuOpen && "1fr" || "0fr" }
     function MenuItem(props) {
@@ -29,7 +27,10 @@ export default function Header() {
     }
     return (
         <>
-            <div style={pathName == "/" && {backgroundColor: "transparent"} || {}} className={styles['header']}>
+            <div className={styles['header']}>
+                <div className={styles['header-left']}>
+                    L3G5ND's Portfolio
+                </div>
                 <div className={styles['header-middle']}>
                     <Item name="Home" path="/"></Item>
                     <Item name="About" path="/about"></Item>
@@ -52,7 +53,6 @@ export default function Header() {
                 </div>
                 <div style={menuStyle} className={styles["menu-holder"]}>
                     <div className={styles["menu"]}>
-                        <div className={styles["menu-header"]}></div>
                         <MenuItem name="Home" path="/"/>
                         <MenuItem name="About" path="/about"/>
                         <MenuItem name="Work" path="/portfolio"/>
