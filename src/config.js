@@ -33,7 +33,11 @@ const config = {
         },
         {
             name: "Big Feature",
-            price: "$100+",
+            price: "$100 - $250",
+        },
+        {
+            name: "Giant Feature",
+            price: "$250+",
         }
     ],
     Libraries: [

@@ -36,7 +36,12 @@
 }
 
 .text-link {
-    color: rgb(182, 88, 88)
+    color: rgb(182, 88, 88);
+    transition: all .1s;
+}
+
+.text-link:hover {
+    color: rgb(200, 95, 95);
 }
 
 .about-nav {
