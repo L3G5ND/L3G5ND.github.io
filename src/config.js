@@ -24,20 +24,20 @@ const config = {
     ],
     Services: [
         {
-            name: "Small Feature",
-            price: "$20 - $50",
+            name: "Normal Feature",
+            price: "$100 - $200",
         },
         {
             name: "Medium Feature",
-            price: "$50 - $100",
+            price: "$200 - $350",
         },
         {
             name: "Big Feature",
-            price: "$100 - $250",
+            price: "$350 - $700",
         },
         {
             name: "Giant Feature",
-            price: "$250+",
+            price: "$1000+",
         }
     ],
     Libraries: [
@@ -74,12 +74,6 @@ const config = {
             image: "/mirror-project-thumbnail.png",
             description: "A mirror made with a viewport frame.",
             video: "https://www.youtube.com/embed/vX7UdVdmTQs"
-        },
-        {
-            name: "3d Engine",
-            image: "/3d-engine-project-thumbnail.png",
-            description: "A 3d Renderer for a 2d plane.",
-            video: "https://www.youtube.com/embed/Ah9izUfg_wg"
         },
         {
             name: "Basketball",

@@ -22,13 +22,13 @@ export default function About() {
                         Roblox Programmer/Developer
                     </p>
                     <p className={styles["main"]}>
-                        I am a professional programmer with 4+ years of experience. I have worked with many programming languages including Roblox Lua, C++, Python, and Javascript.
-                        Roblox is what got me into programming and is why I decided to spend most of my time programming with Roblox Lua.
+                        I am a professional programmer with 6+ years of experience. I have worked with many programming languages including Roblox Lua, C++, Python, and Javascript.
                     </p>
                     <p className={styles["main"]}>
-                        Over my time as a programmer, I can confidently say finding something I can&apos;t do at a professional level is nearly impossible.
-                        I have worked on a variety of <Link className={styles['text-link']}href="/portfolio">projects and libraries</Link> on Roblox.
-                        All of the libraries I&apos;ve created are open-source for anyone to use.
+                        With my experience developing in Roblox, I can confidently say, there isn&apos;t anything I cant do.
+                        I have made a unique variety of <Link className={styles['text-link']}href="/portfolio">projects</Link>.
+                        Consisting of cool gimiks you may find interesting, full open source libraries designed for Roblox development, and a game fully scripted by me!
+                        <a className={styles['text-link']} target="_blank" href="https://www.roblox.com/games/100772130331089/Money-Simulator"> Check it Out!</a>
                     </p>
                     <p className={styles["main"]}>
                         If you are looking for someone to program something up to your expectations, you are in the right place.
