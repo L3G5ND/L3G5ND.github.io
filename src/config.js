@@ -25,7 +25,7 @@ const config = {
     Services: [
         {
             name: "Normal Feature",
-            price: "$100 - $200",
+            price: "$50 - $200",
         },
         {
             name: "Medium Feature",
