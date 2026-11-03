@@ -122,6 +122,10 @@ const config = {
             name: "Datastore2",
             link: "https://kampfkarren.github.io/Roblox/"
         },
+        {
+            name: "Cmdr",
+            link: "https://eryn.io/Cmdr/"
+        }
     ],
 }
 
