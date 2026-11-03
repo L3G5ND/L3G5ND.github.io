@@ -107,6 +107,10 @@ const config = {
             link: "https://rojo.space/"
         },
         {
+            name: "Wally",
+            link: "https://github.com/UpliftGames/wally"
+        },
+        {
             name: "Roact",
             link: "https://roblox.github.io/roact/"
         },
