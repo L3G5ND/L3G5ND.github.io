@@ -66,7 +66,7 @@ const config = {
         },
         {
             name: "Roblox-Replicator",
-            description: "Allows for easy data replication across the Server-Client boundery.",
+            description: "Allows for easy data replication across the Server-Client boundary.",
             link: "https://github.com/L3G5ND/Roblox-Replicator"
         },
         {
