@@ -46,6 +46,8 @@
 .description {
     display: flex;
     justify-content: center;
+    text-align: center;
+    width: 50%;
     margin-top: 3rem;
     font-size: 1.4rem;
 }

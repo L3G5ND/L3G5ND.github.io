@@ -7,6 +7,43 @@ export default function Portfolio() {
         <>
             <div className={styles["content-holder"]}>
                 <div className={styles["content"]}>
+                    <span className={styles["header"]}>Games</span>
+                    <div className={styles["game-list"]}>
+                        {Config.Games.map((game, index) => {
+                            return (
+                                <div key={index} className={styles["game"]}>
+                                    <div className={styles["game-text"]}>
+                                        <span className={styles["game-name"]}>{game.name}</span>
+                                        <span className={styles["game-description"]}>{game.description}</span>
+                                    </div>
+                                    <div className={styles["video-holder"]}>
+                                        <video
+                                            className={styles["video"]}
+                                            autoPlay
+                                            muted
+                                            loop
+                                            controls
+                                            playsInline
+                                            preload="auto"
+                                        >
+                                            <source src={game.video} type="video/mp4" />
+                                            Your browser does not support HTML5 video.
+                                        </video>
+                                    </div>
+                                    {
+                                        game.link &&
+                                        <div className={styles["game-link-holder"]}>
+                                            <a className={styles["game-link"]} target="_blank" href={game.link}>Play Game</a>
+                                        </div> ||
+                                        <div className={styles["game-link-holder"]}>
+                                            <span className={styles["game-link"]}>Coming Soon</span>
+                                        </div>
+                                    }
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <div className={styles["divider"]}></div>
                     <span className={styles["header"]}>Libraries</span>
                     <div className={styles["library-list"]}>
                         {Config.Libraries.map((library, index) => {
@@ -46,7 +83,7 @@ export default function Portfolio() {
                         })}
                     </div>
                     <div className={styles["divider"]}></div>
-                    <span className={styles["header"]}>Skills</span>
+                    <span className={styles["header"]}>Roblox-Skills</span>
                     <div className={styles["skill-list"]}>
                         {Config.Skills.map((skill, index) => {
                             return (

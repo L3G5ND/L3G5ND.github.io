@@ -40,10 +40,23 @@ const config = {
             price: "$1000+",
         }
     ],
+    Games: [
+        {
+            name: "Money Anarchy",
+            description: "Open world simulator. Explore and progress through new islands. Trade, sell, buy, or auction pets/items at the Trading Island. A live economy with values and item counts. Sell items at the merchant, upgrade items, buy boats.",
+            video: "/MoneyAnarchy-Video.mp4",
+            link: "https://www.roblox.com/games/100772130331089/Money-Anarchy"
+        },
+        {
+            name: "Garden and Steal",
+            description: "Roll plants or defense items. Open crates around the map for plants. Make a garden. Defend your garden from other players. Steal plants from other players. Upgrade your stats. Place special items to mutate plants, spawn events, and grow your garden faster.",
+            video: "/GardenAndSteal-Video.mp4"
+        }
+    ],
     Libraries: [
         {
             name: "Vision",
-            description: "An easy to use UI library for Roblox Lua.",
+            description: "My own implementation of Roact (Roblox React).",
             link: "https://github.com/L3G5ND/Vision"
         },
         {
@@ -64,27 +77,27 @@ const config = {
     ],
     Projects: [
         {
-            name: "Maze AI",
-            image: "/maze-ai-project-thumbnail.png",
-            description: "A robot taught to avoid walls with AI.",
-            video: "https://www.youtube.com/embed/X-k0If2iBLk"
+            name: "AI",
+            image: "/ai-robot-thumbnail.png",
+            description: "A robot taught to avoid walls with neuroevolution. I also experimented with back propagation using gradient descent.",
+            video: "https://www.youtube.com/embed/9J46vMStWZk"
         },
         {
             name: "Mirror",
             image: "/mirror-project-thumbnail.png",
-            description: "A mirror made with a viewport frame.",
+            description: "A mirror made with a viewport frame. Math was done differently than Egomoose's version. Both achieve the same result, but I calculated it differently.",
             video: "https://www.youtube.com/embed/vX7UdVdmTQs"
         },
         {
             name: "Basketball",
             image: "/basketball-project-thumbnail.png",
-            description: "Basketball with realistic physics.",
+            description: "Basketball using Roblox physics.",
             video: "https://www.youtube.com/embed/_bv9daQsqTM"
         },
         {
             name: "Camera Effects",
             image: "/camera-effects-project-thumbnail.png",
-            description: "Camera CFrame manipulation effects.",
+            description: "Camera manipulation effects.",
             video: "https://www.youtube.com/embed/0Hj9grPULHA"
         },
     ],
