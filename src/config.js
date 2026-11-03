@@ -56,7 +56,7 @@ const config = {
     Libraries: [
         {
             name: "Vision",
-            description: "My own implementation of Roact (Roblox React).",
+            description: "My own implementation of React on Roblox.",
             link: "https://github.com/L3G5ND/Vision"
         },
         {
