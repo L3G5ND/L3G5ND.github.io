@@ -85,7 +85,7 @@ const config = {
         {
             name: "Mirror",
             image: "/mirror-project-thumbnail.png",
-            description: "A mirror made with a viewport frame. Math was done differently than Egomoose's version. Both achieve the same result, but I calculated it differently.",
+            description: "A mirror made with a viewport frame. Math was done differently than Egomoose's version though simular in some ways.",
             video: "https://www.youtube.com/embed/vX7UdVdmTQs"
         },
         {
@@ -97,7 +97,7 @@ const config = {
         {
             name: "Camera Effects",
             image: "/camera-effects-project-thumbnail.png",
-            description: "Camera manipulation effects.",
+            description: "Camera manipulation effects. Nausea effect like Minecraft.",
             video: "https://www.youtube.com/embed/0Hj9grPULHA"
         },
     ],
