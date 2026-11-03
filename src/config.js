@@ -123,6 +123,10 @@ const config = {
             link: "https://kampfkarren.github.io/Roblox/"
         },
         {
+            name: "Promises",
+            link: "https://eryn.io/roblox-lua-promise/"
+        },
+        {
             name: "Cmdr",
             link: "https://eryn.io/Cmdr/"
         }
