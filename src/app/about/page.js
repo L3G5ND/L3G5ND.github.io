@@ -22,7 +22,7 @@ export default function About() {
                         Professional Roblox Developer/Programmer
                     </p>
                     <p className={styles["main"]}>
-                        I've been developing on Roblox for 6+ years. Programming is my expertise and passion. I have worked with many other programming languages besides Lua, like C++, Python, and Javascript.
+                        I&aposve been developing on Roblox for 6+ years. Programming is my expertise and passion. I have worked with many other programming languages besides Lua, like C++, Python, and Javascript.
                     </p>
                     <p className={styles["main"]}>
                         I have made a unique variety of <Link className={styles['text-link']}href="/portfolio">projects </Link>
