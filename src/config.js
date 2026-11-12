@@ -32,49 +32,49 @@ const config = {
     {
       id: 'PyNumReader',
       name: 'Python Number Reading AI',
-      stack: ['Python'],
-      description: '',
+      stack: ['TBD'],
+      description: 'TBD',
       wip: true,
     },
     {
       id: 'TamperScript',
       name: 'Tamper Script',
-      stack: ['React', 'TypeScript', 'Python'],
-      description: '',
+      stack: ['TBD'],
+      description: 'TBD',
       github: 'https://github.com/L3G5ND/TamperScript'
     },
     {
       id: 'RoTrader',
       name: 'Roblox Limiteds Trader',
-      stack: ['React', 'TypeScript', 'Python'],
-      description: '',
+      stack: ['TBD'],
+      description: 'TBD',
     },
     {
       id: 'SniperX',
       name: 'Roblox Limiteds Sniper',
-      stack: ['React', 'TypeScript', 'Python'],
-      description: '',
+      stack: ['TBD'],
+      description: 'TBD',
       github: 'https://github.com/L3G5ND/SniperX'
     },
     {
       id: 'MoneyAnarchyAPI',
       name: 'Roblox Game Backend',
-      stack: ['React', 'TypeScript', 'Python'],
-      description: '',
+      stack: ['TBD'],
+      description: 'TBD',
       github: 'https://github.com/L3G5ND/MoneySimulatorAPI'
     },
     {
       id: 'CSDeals',
       name: 'CSGO Deals Finder',
-      stack: ['React', 'TypeScript', 'Python'],
-      description: '',
+      stack: ['TBD'],
+      description: 'TBD',
       github: 'https://github.com/L3G5ND/CS-Deals'
     },
     {
       id: 'CSDealsExtension',
       name: 'CSGO Deal Info Chrome Extension',
-      stack: ['React', 'TypeScript', 'Python'],
-      description: '',
+      stack: ['TBD'],
+      description: 'TBD',
       github: 'https://github.com/L3G5ND/CS-Deals-Extension'
     },
   ],
