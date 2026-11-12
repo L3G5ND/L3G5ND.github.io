@@ -39,7 +39,7 @@ export default function ProjectCards() {
           <div className={styles.content}>
             <h3>{project.name}</h3>
             <p>{project.description}</p>
-            {project.github?.trim() && (
+            {project.github?.trim() ? (
               <a
                 className={`button ${styles.codeButton}`}
                 href={project.github}
@@ -49,6 +49,30 @@ export default function ProjectCards() {
               >
                 View code
               </a>
+            ) : (
+              <button
+                type="button"
+                className={`button ${styles.codeButton} ${styles.privateButton}`}
+                disabled
+                aria-label={`Code for ${project.name} is private`}
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="5" y="10" width="14" height="11" rx="2" />
+                  <path d="M8 10V7a4 4 0 0 1 8 0v3" />
+                  <path d="M12 14v3" />
+                </svg>
+                Private
+              </button>
             )}
           </div>
         </article>

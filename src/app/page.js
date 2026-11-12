@@ -1,3 +1,4 @@
+import assetPath from '@/lib/assetPath';
 import Link from 'next/link';
 import Image from 'next/image';
 import Config from '@config';
@@ -15,7 +16,7 @@ export default function Home() {
               {Config.portrait ? (
                 <Image
                   className={styles.portrait}
-                  src={Config.portrait}
+                  src={assetPath(Config.portrait)}
                   width={104}
                   height={104}
                   alt="Malachi Holland"

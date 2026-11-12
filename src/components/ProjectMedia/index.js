@@ -1,3 +1,4 @@
+import assetPath from '@/lib/assetPath';
 import Image from 'next/image';
 import styles from './style.module.css';
 
@@ -43,7 +44,7 @@ export default function ProjectMedia({ project, preview = false }) {
     ) : (
       <video
         className={styles.preview}
-        src={video}
+        src={assetPath(video)}
         muted
         playsInline
         preload="metadata"
@@ -58,7 +59,7 @@ export default function ProjectMedia({ project, preview = false }) {
       {image && (
         <Image
           className={`${styles.image} ${preview ? styles.preview : ''}`}
-          src={image}
+          src={assetPath(image)}
           width={1200}
           height={750}
           sizes="(max-width: 800px) 100vw, 60vw"
@@ -79,14 +80,15 @@ export default function ProjectMedia({ project, preview = false }) {
         ) : (
           <video
             className={styles.video}
-            src={video}
-            poster={image || undefined}
+            src={assetPath(video)}
+            poster={assetPath(image) || undefined}
             controls
             playsInline
             preload="metadata"
             aria-label={`${name} video demonstration`}
           >
-            Your browser cannot play this video. <a href={video}>Download the video</a>.
+            Your browser cannot play this video.{' '}
+            <a href={assetPath(video)}>Download the video</a>.
           </video>
         ))}
     </div>

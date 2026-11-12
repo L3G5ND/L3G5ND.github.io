@@ -16,6 +16,7 @@ const config = {
       link: 'https://twitter.com/L3G5ND_',
     },
   ],
+  
   skills: [
     'Python',
     'C++',
@@ -31,17 +32,16 @@ const config = {
     {
       id: 'rotrader',
       name: 'RoTrader',
-      description:
-        'An inventory dashboard and dry-run trading bot interface. Bringing account data, inventory, and trading experiments into one workspace.',
+      description: 'An inventory dashboard and dry-run trading bot interface. Bringing account data, inventory, and trading experiments into one workspace.',
     },
     {
       id: 'portfolio',
       name: 'A little corner of the internet',
-      description:
-        'The portfolio you’re exploring. A place for software, creative experiments, and the projects that started it all.',
+      description: 'The portfolio you’re exploring. A place for software, creative experiments, and the projects that started it all.',
       github: 'https://github.com/L3G5ND/Portfolio',
     },
   ],
+
   roblox: {
     games: [
       {

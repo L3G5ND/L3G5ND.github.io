@@ -1,3 +1,4 @@
+import assetPath from '@/lib/assetPath';
 import Config from '@config';
 import styles from './style.module.css';
 import { ProjectCard } from '@/components/ProjectCards';
@@ -12,7 +13,7 @@ export default function RobloxCollection() {
           {Config.roblox.games.map((g) => (
             <article className="card" key={g.name}>
               <video className="media" controls playsInline preload="metadata">
-                <source src={g.video} type="video/mp4" />
+                <source src={assetPath(g.video)} type="video/mp4" />
               </video>
               <h3>{g.name}</h3>
               <p>{g.description}</p>

@@ -1,4 +1,5 @@
 'use client';
+import assetPath from '@/lib/assetPath';
 import Link from 'next/link';
 import Image from 'next/image';
 import Config from '@config';
@@ -12,7 +13,7 @@ export default function Header() {
         <span className={styles.mark}>
           {Config.portrait ? (
             <Image
-              src={Config.portrait}
+              src={assetPath(Config.portrait)}
               width={42}
               height={42}
               alt="Malachi Holland"

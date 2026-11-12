@@ -64,6 +64,19 @@
   margin-top: auto;
   border-radius: 999px;
 }
+.privateButton,
+.privateButton:hover {
+  gap: 8px;
+  background: #2a2034;
+  border-color: #685477;
+  color: #d8c9e5;
+  box-shadow: none;
+  transform: none;
+  cursor: default;
+}
+.privateButton svg {
+  flex-shrink: 0;
+}
 .tags {
   display: flex;
   flex-wrap: wrap;
