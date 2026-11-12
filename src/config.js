@@ -16,7 +16,7 @@ const config = {
       link: 'https://twitter.com/L3G5ND_',
     },
   ],
-  
+
   skills: [
     'Python',
     'C++',
@@ -30,15 +30,52 @@ const config = {
   ],
   projects: [
     {
-      id: 'rotrader',
-      name: 'RoTrader',
-      description: 'An inventory dashboard and dry-run trading bot interface. Bringing account data, inventory, and trading experiments into one workspace.',
+      id: 'PyNumReader',
+      name: 'Python Number Reading AI',
+      stack: ['Python'],
+      description: '',
+      wip: true,
     },
     {
-      id: 'portfolio',
-      name: 'A little corner of the internet',
-      description: 'The portfolio you’re exploring. A place for software, creative experiments, and the projects that started it all.',
-      github: 'https://github.com/L3G5ND/Portfolio',
+      id: 'TamperScript',
+      name: 'Tamper Script',
+      stack: ['React', 'TypeScript', 'Python'],
+      description: '',
+      github: 'https://github.com/L3G5ND/TamperScript'
+    },
+    {
+      id: 'RoTrader',
+      name: 'Roblox Limiteds Trader',
+      stack: ['React', 'TypeScript', 'Python'],
+      description: '',
+    },
+    {
+      id: 'SniperX',
+      name: 'Roblox Limiteds Sniper',
+      stack: ['React', 'TypeScript', 'Python'],
+      description: '',
+      github: 'https://github.com/L3G5ND/SniperX'
+    },
+    {
+      id: 'MoneyAnarchyAPI',
+      name: 'Roblox Game Backend',
+      stack: ['React', 'TypeScript', 'Python'],
+      description: '',
+      github: 'https://github.com/L3G5ND/MoneySimulatorAPI'
+    },
+    {
+      id: 'CSDeals',
+      name: 'CSGO Deals Finder',
+      stack: ['React', 'TypeScript', 'Python'],
+      description: '',
+      github: 'https://github.com/L3G5ND/CS-Deals'
+    },
+    {
+      id: 'CSDealsExtension',
+      name: 'CSGO Deal Info Chrome Extension',
+      stack: ['React', 'TypeScript', 'Python'],
+      description: '',
+      github: 'https://github.com/L3G5ND/CS-Deals-Extension'
     },
   ],
 

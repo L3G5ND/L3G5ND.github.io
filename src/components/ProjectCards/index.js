@@ -39,7 +39,23 @@ export default function ProjectCards() {
           <div className={styles.content}>
             <h3>{project.name}</h3>
             <p>{project.description}</p>
-            {project.github?.trim() ? (
+            {!!project.stack?.length && (
+              <div className={styles.tags} aria-label="Project skills">
+                {project.stack.map((skill) => (
+                  <span key={skill}>{skill}</span>
+                ))}
+              </div>
+            )}
+            {project.wip ? (
+              <button
+                type="button"
+                className={`button ${styles.codeButton} ${styles.privateButton}`}
+                disabled
+                aria-label={`${project.name} is a work in progress`}
+              >
+                WIP
+              </button>
+            ) : project.github?.trim() ? (
               <a
                 className={`button ${styles.codeButton}`}
                 href={project.github}
