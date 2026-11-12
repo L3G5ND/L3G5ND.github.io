@@ -1,0 +1,50 @@
+.project {
+  padding: 45px 0 20px;
+}
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #e4cdfa;
+  border: 1px solid #72538c;
+  background: #251a32;
+  border-radius: 999px;
+  padding: 11px 18px;
+  margin-bottom: 36px;
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+}
+.back:hover {
+  background: #3c2850;
+  border-color: #bb8fe0;
+  color: white;
+}
+.heading {
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+  padding-bottom: 36px;
+}
+.heading h1 {
+  font-size: clamp(38px, 5vw, 66px);
+  overflow-wrap: anywhere;
+}
+.heading > p {
+  max-width: 740px;
+  font-size: 18px;
+  margin: 24px auto;
+}
+.codeButton {
+  border-radius: 999px;
+}
+@media (max-width: 800px) {
+  .project {
+    padding-top: 30px;
+  }
+  .heading > p {
+    font-size: 16px;
+  }
+}

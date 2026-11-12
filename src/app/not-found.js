@@ -1,1 +1,19 @@
-import Link from 'next/link';export default function NotFound(){return <div className='page-heading'><span className='eyebrow'>Page not found</span><h1>Nothing built here.<br/>Yet.</h1><p>Let’s get you back to something that exists.</p><Link href='/' className='button' style={{marginTop:25}}>Back home </Link></div>}
+import BackArrow from '@/components/BackArrow';
+import Link from 'next/link';
+export default function NotFound() {
+  return (
+    <div className="page-heading">
+      <span className="eyebrow">Page not found</span>
+      <h1>
+        Nothing built here.
+        <br />
+        Yet.
+      </h1>
+      <p>Let’s get you back to something that exists.</p>
+      <Link href="/" className="button" style={{ marginTop: 25 }}>
+        <BackArrow />
+        Back home
+      </Link>
+    </div>
+  );
+}

@@ -1,4 +1,88 @@
 import Config from '@config';
-import Link from 'next/link';
-import Image from 'next/image';
-export default function RobloxCollection(){return <><section className="section" id="games"><div className="section-title"><h2>Games</h2></div><div className="grid">{Config.roblox.games.map(g=><article className="card" key={g.name}><video className="media" controls playsInline preload="metadata"><source src={g.video} type="video/mp4"/></video><h3>{g.name}</h3><p>{g.description}</p>{g.link?<a className="text-link" href={g.link} target="_blank" rel="noreferrer">Play game </a>:<span className="chip">Coming soon</span>}</article>)}</div></section><section className="section" id="libraries"><h2>Open-source libraries</h2>{Config.roblox.libraries.map(l=><a className="list-row" key={l.name} href={l.link} target="_blank" rel="noreferrer"><div><h3>{l.name}</h3><p>{l.description}</p></div><span className="text-link">View code</span></a>)}</section><section className="section" id="projects"><div className="section-title"><h2>Experiments</h2></div><div className="grid">{Config.roblox.projects.map((p,i)=><article key={p.name} className="card"><Link href={'/roblox/project/'+i}><Image className="media" src={p.image} width={640} height={360} alt={p.name+' project preview'}/><h3>{p.name} </h3></Link><p>{p.description}</p></article>)}</div></section><section className="section" id="skills"><h2>Roblox skills & tools</h2><div className="skills-grid" style={{marginTop:25}}>{Config.roblox.skills.map(s=><a className="skill-block" key={s.name} href={s.link} target="_blank" rel="noreferrer">{s.name} </a>)}</div></section></>}
+import styles from './style.module.css';
+import { ProjectCard } from '@/components/ProjectCards';
+export default function RobloxCollection() {
+  return (
+    <>
+      <section className="section" id="games">
+        <div className="section-title">
+          <h2>Games</h2>
+        </div>
+        <div className="grid">
+          {Config.roblox.games.map((g) => (
+            <article className="card" key={g.name}>
+              <video className="media" controls playsInline preload="metadata">
+                <source src={g.video} type="video/mp4" />
+              </video>
+              <h3>{g.name}</h3>
+              <p>{g.description}</p>
+              {g.link ? (
+                <a
+                  className={`button ${styles.codeButton}`}
+                  href={g.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Play game{' '}
+                </a>
+              ) : (
+                <span className="chip">Coming soon</span>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="section" id="libraries">
+        <h2>Open-Source Libraries</h2>
+        {Config.roblox.libraries.map((l) => (
+          <article className="list-row" key={l.name}>
+            <div>
+              <h3>{l.name}</h3>
+              <p>{l.description}</p>
+            </div>
+            {l.link && (
+              <a
+                className={`button ${styles.codeButton}`}
+                href={l.link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                View code
+              </a>
+            )}
+          </article>
+        ))}
+      </section>
+      <section className="section" id="projects">
+        <div className="section-title">
+          <h2>Experiments</h2>
+        </div>
+        <div className="grid">
+          {Config.roblox.projects.map((project, index) => (
+            <ProjectCard
+              key={project.name}
+              project={project}
+              href={'/roblox/project/' + index}
+            />
+          ))}
+        </div>
+      </section>
+      <section className="section" id="skills">
+        <h2>Skills</h2>
+        <div className="skills-grid" style={{ marginTop: 25 }}>
+          {Config.roblox.skills.map((s) => (
+            <a
+              className="skill-block"
+              key={s.name}
+              href={s.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {s.name}{' '}
+            </a>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}

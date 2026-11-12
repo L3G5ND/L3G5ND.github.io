@@ -1,0 +1,6 @@
+.codeButton {
+  border-radius: 999px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding: 11px 19px;
+}

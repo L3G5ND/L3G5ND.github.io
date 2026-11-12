@@ -3,44 +3,196 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: clamp(35px, 5vw, 75px);
-  padding: 85px 0 65px;
+  padding: 32px 0 0;
 }
-.intro h1 { font-size: clamp(44px, 4.5vw, 64px); }
-.intro h1 span { color: var(--accent); }
-.intro > p { margin-top: 26px; max-width: 430px; font-size: 17px; }
-.prompt { display: flex; align-items: flex-start; gap: 14px; margin-top: 36px; padding-top: 25px; border-top: 1px solid var(--line); max-width: 415px; }
-.promptMark { color: var(--accent); font-size: 24px; line-height: 1.4; }
-.prompt p { font-size: 14px; }
-.panel { padding: clamp(24px, 3vw, 38px); border: 1px solid #5b426f; border-radius: 23px; background: linear-gradient(145deg, #30213f, #1a1325); box-shadow: 0 20px 60px #0003; }
-.panelHeading h2 { font-size: 30px; }
-.panelHeading p { margin-top: 10px; font-size: 15px; }
-.primaryContacts { display: grid; gap: 14px; margin-top: 28px; }
-.contactButton { display: flex; align-items: center; gap: 16px; min-height: 96px; padding: 20px; border: 1px solid #795995; border-radius: 13px; background: #32233f; color: #f8f2ff; transition: transform .2s, border-color .2s, background .2s, box-shadow .2s; }
-.email { background: linear-gradient(120deg, #72469e, #543471); border-color: #b38bd7; }
-.icon { display: grid; place-items: center; flex-shrink: 0; width: 43px; height: 43px; border: 1px solid #cda9ef55; background: #dcb7ff12; border-radius: 11px; }
-.icon svg { width: 24px; height: 24px; }
-.buttonText { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
-.buttonText strong { font-size: 16px; font-weight: 650; }
-.buttonText > span { font-size: 13px; line-height: 1.5; color: #e0cfea; overflow-wrap: anywhere; }
-.contactButton:hover { color: white; transform: translateY(-3px); border-color: #dbb3ff; background: #573775; box-shadow: 0 8px 24px #10091955; }
-.email:hover { background: #7d51a6; }
-.elsewhere { border-top: 1px solid #604674; padding-top: 25px; margin-top: 28px; }
-.elsewhere h3 { font-size: 13px; font-weight: 500; letter-spacing: .3px; color: #d0bedf; margin-bottom: 15px; }
-.profileButtons { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-.profileButton { display: flex; align-items: center; justify-content: center; min-height: 46px; padding: 12px 8px; border: 1px solid #715586; border-radius: 9px; background: #251a32; color: #ede0f8; font-size: 14px; font-weight: 600; transition: background .2s, border-color .2s, transform .2s; }
-.profileButton:hover { color: white; border-color: #bc91dd; background: #48305f; transform: translateY(-2px); }
+.intro h1 {
+  font-size: clamp(44px, 4.5vw, 64px);
+}
+.intro h1 span {
+  color: var(--accent);
+}
+.intro > p {
+  margin-top: 26px;
+  max-width: 430px;
+  font-size: 17px;
+}
+.prompt {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  max-width: 415px;
+}
+.promptMark {
+  color: var(--accent);
+  font-size: 24px;
+  line-height: 1.4;
+}
+.prompt p {
+  font-size: 14px;
+}
+.panel {
+  padding: 26px;
+  border: 1px solid #5b426f;
+  border-radius: 23px;
+  background: linear-gradient(145deg, #30213f, #1a1325);
+  box-shadow: 0 20px 60px #0003;
+}
+.panelHeading h2 {
+  font-size: 30px;
+}
+.panelHeading p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.primaryContacts {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+.contactButton {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 80px;
+  padding: 16px;
+  border: 1px solid #795995;
+  border-radius: 13px;
+  background: #32233f;
+  color: #f8f2ff;
+  transition:
+    transform 0.2s,
+    border-color 0.2s,
+    background 0.2s,
+    box-shadow 0.2s;
+}
+.email {
+  background: linear-gradient(120deg, #72469e, #543471);
+  border-color: #b38bd7;
+}
+.icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 43px;
+  height: 43px;
+  border: 1px solid #cda9ef55;
+  background: #dcb7ff12;
+  border-radius: 11px;
+}
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+.buttonText {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+.buttonText strong {
+  font-size: 16px;
+  font-weight: 650;
+}
+.buttonText > span {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #e0cfea;
+  overflow-wrap: anywhere;
+}
+.contactButton:hover {
+  color: white;
+  transform: translateY(-3px);
+  border-color: #dbb3ff;
+  background: #573775;
+  box-shadow: 0 8px 24px #10091955;
+}
+.email:hover {
+  background: #7d51a6;
+}
+.elsewhere {
+  border-top: 1px solid #604674;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.elsewhere h3 {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #d0bedf;
+  margin-bottom: 15px;
+}
+.profileButtons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.profileButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 12px 8px;
+  border: 1px solid #715586;
+  border-radius: 9px;
+  background: #251a32;
+  color: #ede0f8;
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+}
+.profileButton:hover {
+  color: white;
+  border-color: #bc91dd;
+  background: #48305f;
+  transform: translateY(-2px);
+}
 @media (max-width: 1050px) {
-  .contact { grid-template-columns: 1fr; gap: 38px; padding: 55px 0 30px; max-width: 680px; margin: auto; }
-  .intro > p, .prompt { max-width: 540px; }
-  .intro h1 { font-size: 56px; }
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding: 45px 0 0;
+    max-width: 680px;
+    margin: auto;
+  }
+  .intro > p,
+  .prompt {
+    max-width: 540px;
+  }
+  .intro h1 {
+    font-size: 56px;
+  }
 }
 @media (max-width: 450px) {
-  .contact { padding-top: 40px; }
-  .intro h1 { font-size: 46px; }
-  .panel { padding: 23px 18px; }
-  .contactButton { padding: 17px 14px; gap: 12px; }
-  .icon { width: 36px; height: 36px; }
-  .buttonText strong { font-size: 15px; }
-  .profileButtons { gap: 7px; }
-  .profileButton { font-size: 13px; }
+  .contact {
+    padding-top: 40px;
+  }
+  .intro h1 {
+    font-size: 46px;
+  }
+  .panel {
+    padding: 23px 18px;
+  }
+  .contactButton {
+    padding: 17px 14px;
+    gap: 12px;
+  }
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+  .buttonText strong {
+    font-size: 15px;
+  }
+  .profileButtons {
+    gap: 7px;
+  }
+  .profileButton {
+    font-size: 13px;
+  }
 }

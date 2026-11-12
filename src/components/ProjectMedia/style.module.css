@@ -1,0 +1,48 @@
+.gallery {
+  display: grid;
+  gap: 22px;
+  min-width: 0;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 720px;
+  object-fit: contain;
+  background: #15101e;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+}
+.preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  max-height: none;
+  border: 0;
+  border-radius: 0;
+}
+.video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: #100c18;
+}
+
+.videoCover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  aspect-ratio: 16/10;
+  background: radial-gradient(ellipse at top, #49335d, #15101e);
+  color: #e7d1fb;
+  font-size: 14px;
+}
+.videoCover > span:first-child {
+  font-size: 42px;
+}

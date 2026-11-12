@@ -1,1 +1,131 @@
-.pillar{position:fixed;top:0;bottom:0;width:106px;display:flex;flex-direction:column;align-items:center;pointer-events:none;z-index:0;filter:drop-shadow(0 0 25px #8760ac18);opacity:.72}.left{left:20px}.right{right:20px}.crown{width:100%;height:17px;flex-shrink:0;border:1px solid #877399;background:linear-gradient(#786087,#2b2239 45%,#665075 80%,#241c30);border-radius:3px}.capital{height:47px;width:94%;position:relative;flex-shrink:0;background:radial-gradient(ellipse at top,#8b749d,#362b45 65%);clip-path:polygon(0 0,100% 0,88% 67%,77% 100%,23% 100%,12% 67%)}.capital span{position:absolute;top:5px;width:29px;height:29px;border-radius:50%;border:4px double #ab8dbd;background:radial-gradient(circle,#41314f 15%,#9c7daf 20%,#463454 35%,#8b6c9a 42%,#32283c 65%)}.capital span:first-child{left:2px}.capital span:last-child{right:2px}.neck{width:65%;height:14px;background:linear-gradient(#4c3c5b,#a18bb0,#40314c);flex-shrink:0;border-radius:2px}.shaft{width:66%;flex:1;min-height:80px;background:linear-gradient(90deg,#1c1528aa,transparent 35%,#1b1427aa),repeating-linear-gradient(90deg,#34263f 0,#a086af 4px,#695179 7px,#32233f 10px,#241b30 13px);clip-path:polygon(6% 0,94% 0,100% 100%,0 100%);border-inline:1px solid #7e6792}.foot{width:82%;height:24px;flex-shrink:0;background:linear-gradient(#3a2b46,#9a81a9 35%,#40304f 65%,#8b729f);border-radius:10px 10px 2px 2px}.base{width:100%;height:28px;flex-shrink:0;background:linear-gradient(#766084,#33243f 35%,#5d466b 70%,#251b2f);border:1px solid #725b83;border-radius:2px}@media(min-width:1700px){.pillar{width:140px}.left{left:4vw}.right{right:4vw}}@media(max-width:1150px){.pillar{width:61px;opacity:.45}.left{left:8px}.right{right:8px}.capital{height:35px}.capital span{width:21px;height:21px}}@media(max-width:700px){.pillar{display:none}}
+.pillar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 106px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+  z-index: 0;
+  filter: drop-shadow(0 0 25px #8760ac18);
+  opacity: 0.72;
+}
+.left {
+  left: 20px;
+}
+.right {
+  right: 20px;
+}
+.crown {
+  width: 100%;
+  height: 17px;
+  flex-shrink: 0;
+  border: 1px solid #877399;
+  background: linear-gradient(#786087, #2b2239 45%, #665075 80%, #241c30);
+  border-radius: 3px;
+}
+.capital {
+  height: 47px;
+  width: 94%;
+  position: relative;
+  flex-shrink: 0;
+  background: radial-gradient(ellipse at top, #8b749d, #362b45 65%);
+  clip-path: polygon(0 0, 100% 0, 88% 67%, 77% 100%, 23% 100%, 12% 67%);
+}
+.capital span {
+  position: absolute;
+  top: 5px;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: 4px double #ab8dbd;
+  background: radial-gradient(
+    circle,
+    #41314f 15%,
+    #9c7daf 20%,
+    #463454 35%,
+    #8b6c9a 42%,
+    #32283c 65%
+  );
+}
+.capital span:first-child {
+  left: 2px;
+}
+.capital span:last-child {
+  right: 2px;
+}
+.neck {
+  width: 65%;
+  height: 14px;
+  background: linear-gradient(#4c3c5b, #a18bb0, #40314c);
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+.shaft {
+  width: 66%;
+  flex: 1;
+  min-height: 80px;
+  background:
+    linear-gradient(90deg, #1c1528aa, transparent 35%, #1b1427aa),
+    repeating-linear-gradient(
+      90deg,
+      #34263f 0,
+      #a086af 4px,
+      #695179 7px,
+      #32233f 10px,
+      #241b30 13px
+    );
+  clip-path: polygon(6% 0, 94% 0, 100% 100%, 0 100%);
+  border-inline: 1px solid #7e6792;
+}
+.foot {
+  width: 82%;
+  height: 24px;
+  flex-shrink: 0;
+  background: linear-gradient(#3a2b46, #9a81a9 35%, #40304f 65%, #8b729f);
+  border-radius: 10px 10px 2px 2px;
+}
+.base {
+  width: 100%;
+  height: 28px;
+  flex-shrink: 0;
+  background: linear-gradient(#766084, #33243f 35%, #5d466b 70%, #251b2f);
+  border: 1px solid #725b83;
+  border-radius: 2px;
+}
+@media (min-width: 1700px) {
+  .pillar {
+    width: 140px;
+  }
+  .left {
+    left: 4vw;
+  }
+  .right {
+    right: 4vw;
+  }
+}
+@media (max-width: 1150px) {
+  .pillar {
+    width: 61px;
+    opacity: 0.45;
+  }
+  .left {
+    left: 8px;
+  }
+  .right {
+    right: 8px;
+  }
+  .capital {
+    height: 35px;
+  }
+  .capital span {
+    width: 21px;
+    height: 21px;
+  }
+}
+@media (max-width: 700px) {
+  .pillar {
+    display: none;
+  }
+}
