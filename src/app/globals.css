@@ -397,7 +397,8 @@ body:has([data-contact-page]) main {
   min-height: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  margin-block: 0;
 }
 body:has([data-contact-page]) footer {
   margin-top: 0;
@@ -412,6 +413,17 @@ body:has([data-contact-page]) footer {
 .skills-grid {
   grid-template-columns: repeat(auto-fit, minmax(min(140px, 100%), 1fr));
   align-items: stretch;
+}
+.skill-language {
+  color: #c4edf4;
+  background: #17343e;
+  border-color: #4c7d8a;
+}
+.skill-language:hover,
+.skill-language:focus-visible {
+  background: #234955;
+  border-color: #8fd6e5;
+  box-shadow: 0 8px 30px #68c5e326;
 }
 .arrow-link {
   display: inline-flex;
@@ -428,4 +440,13 @@ body:has([data-contact-page]) footer {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+body:has([data-home-page]) main {
+  min-height: 0;
+  margin-block: 0;
+}
+body:has([data-home-page]) footer {
+  margin-top: 0;
+  padding-block: 20px;
 }

@@ -1,5 +1,6 @@
 import assetPath from '@/lib/assetPath';
 import Config from '@config';
+import ProjectTags from '@/components/ProjectTags';
 import styles from './style.module.css';
 import { ProjectCard } from '@/components/ProjectCards';
 export default function RobloxCollection() {
@@ -40,6 +41,7 @@ export default function RobloxCollection() {
             <div>
               <h3>{l.name}</h3>
               <p>{l.description}</p>
+              <ProjectTags project={l} />
             </div>
             {l.link && (
               <a

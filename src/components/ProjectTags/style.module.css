@@ -1,0 +1,33 @@
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 6px 0 0;
+  list-style: none;
+}
+.tags li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #e3d3f1;
+  background: #af7fda12;
+  border: 1px solid #5a426e;
+  border-radius: 6px;
+  padding: 6px 9px;
+}
+.tags .language {
+  color: #c4edf4;
+  background: #17343e;
+  border-color: #4c7d8a;
+  font-weight: 600;
+}
+.symbol {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  color: #8fd6e5;
+}

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Config from '@config';
 import ProjectMedia from '@/components/ProjectMedia';
 import styles from './style.module.css';
+import ProjectTags from '@/components/ProjectTags';
 
 export function ProjectCard({ project, href }) {
   const hasMedia = Boolean(project.image || project.video);
@@ -19,13 +20,7 @@ export function ProjectCard({ project, href }) {
       <div className={styles.content}>
         <h3>{project.name}</h3>
         <p>{project.description}</p>
-        {!!project.stack?.length && (
-          <div className={styles.tags}>
-            {project.stack.map((skill) => (
-              <span key={skill}>{skill}</span>
-            ))}
-          </div>
-        )}
+        <ProjectTags project={project} />
       </div>
     </Link>
   );
@@ -39,13 +34,7 @@ export default function ProjectCards() {
           <div className={styles.content}>
             <h3>{project.name}</h3>
             <p>{project.description}</p>
-            {!!project.stack?.length && (
-              <div className={styles.tags} aria-label="Project skills">
-                {project.stack.map((skill) => (
-                  <span key={skill}>{skill}</span>
-                ))}
-              </div>
-            )}
+            <ProjectTags project={project} />
             {project.wip ? (
               <button
                 type="button"

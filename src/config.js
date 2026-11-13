@@ -17,65 +17,99 @@ const config = {
     },
   ],
 
+  languages: ['Python', 'C++', 'C#', 'JavaScript', 'Lua', 'SQL'],
   skills: [
     'Python',
     'C++',
+    'C#',
     'JavaScript',
     'Lua',
     'React',
     'Next.js',
     'MongoDB',
     'SQL',
-    'Chrome Extentions',
+    'Chrome Extensions',
   ],
   projects: [
     {
       id: 'PyNumReader',
       name: 'Python Number Reading AI',
-      stack: ['TBD'],
-      description: 'TBD',
+      languages: ['Python'],
+      stack: ['PyTorch', 'Tkinter'],
+      description:
+        'I wanted to see how a neural network learns to read handwritten digits. This Python and PyTorch project explores supervised learning, with the goal of turning changing weights and biases into a visual window into the training process.',
       wip: true,
     },
     {
       id: 'TamperScript',
       name: 'Tamper Script',
-      stack: ['TBD'],
-      description: 'TBD',
-      github: 'https://github.com/L3G5ND/TamperScript'
+      languages: ['JavaScript'],
+      stack: [
+        'HTML',
+        'CSS',
+        'Chrome Extensions',
+        'Webpack',
+        'Babel',
+        'Esprima',
+        'Escodegen',
+      ],
+      description:
+        'A Chrome extension that lets users make websites their own with custom scripts. Inspired by Violentmonkey, I built the script injector, storage system, and interface that bring those scripts into the browser.',
+      github: 'https://github.com/L3G5ND/TamperScript',
     },
     {
       id: 'RoTrader',
       name: 'Roblox Limiteds Trader',
-      stack: ['TBD'],
-      description: 'TBD',
+      languages: ['Python'],
+      stack: [],
+      description:
+        'A Python trading bot built around my own rules for spotting opportunities in Roblox limited items. Controlled through terminal commands, it is designed to handle outgoing and incoming trades with the aim of growing inventory value automatically.',
+      wip: true,
     },
     {
       id: 'SniperX',
       name: 'Roblox Limiteds Sniper',
-      stack: ['TBD'],
-      description: 'TBD',
-      github: 'https://github.com/L3G5ND/SniperX'
+      languages: ['JavaScript'],
+      stack: ['Node.js', 'Axios', 'Chalk'],
+      description:
+        'A tool built to spot Roblox limited items listed at a bargain. It watches selected items against custom price limits or discounts from recent average prices, with automatic purchasing logic, purchase logs, and Discord notifications.',
+      github: 'https://github.com/L3G5ND/SniperX',
     },
     {
       id: 'MoneyAnarchyAPI',
       name: 'Roblox Game Backend',
-      stack: ['TBD'],
-      description: 'TBD',
-      github: 'https://github.com/L3G5ND/MoneySimulatorAPI'
+      languages: ['Python'],
+      stack: ['FastAPI', 'SQLAlchemy', 'Pydantic', 'MySQL'],
+      description:
+        'The backend behind the economy in my Roblox game, where players drive the market. It tracks item counts and sales across every server, using recent transactions between players to keep prices moving with the market.',
+      github: 'https://github.com/L3G5ND/MoneySimulatorAPI',
     },
     {
       id: 'CSDeals',
       name: 'CSGO Deals Finder',
-      stack: ['TBD'],
-      description: 'TBD',
-      github: 'https://github.com/L3G5ND/CS-Deals'
+      languages: ['JavaScript'],
+      stack: [
+        'Node.js',
+        'Express',
+        'MongoDB',
+        'Mongoose',
+        'Socket.IO',
+        'EJS',
+        'jQuery',
+        'CSS',
+      ],
+      description:
+        'A single place to find CS:GO skin deals across Skinport and Waxpeer. Live listings, price comparisons, and filters help users spot opportunities as they appear, backed by an account system with different access tiers.',
+      github: 'https://github.com/L3G5ND/CS-Deals',
     },
     {
       id: 'CSDealsExtension',
       name: 'CSGO Deal Info Chrome Extension',
-      stack: ['TBD'],
-      description: 'TBD',
-      github: 'https://github.com/L3G5ND/CS-Deals-Extension'
+      languages: ['JavaScript'],
+      stack: ['Chrome Extensions', 'Webpack', 'Babel'],
+      description:
+        'Price comparisons right where you shop. This Chrome extension adds Steam and BUFF prices, deal percentages highlighted with color, and Pricempire links to Skinport item cards, helping users spot good listings and filter out poor deals.',
+      github: 'https://github.com/L3G5ND/CS-Deals-Extension',
     },
   ],
 
@@ -99,22 +133,29 @@ const config = {
     libraries: [
       {
         name: 'Vision',
+        languages: ['Lua'],
+        stack: ['Roblox', 'Rojo', 'Wally'],
         description: 'My own implementation of React on Roblox.',
         link: 'https://github.com/L3G5ND/Vision',
       },
       {
         name: 'Roblox-Profile',
+        languages: ['Lua'],
+        stack: ['Roblox', 'Rojo', 'Wally'],
         description: 'Easily save/manipulate data to Roblox servers.',
         link: 'https://github.com/L3G5ND/Roblox-Profile',
       },
       {
         name: 'Roblox-Replicator',
-        description:
-          'Allows for easy data replication across the Server-Client boundary.',
+        languages: ['Lua'],
+        stack: ['Roblox', 'Rojo', 'Wally'],
+        description: 'Makes it easy to replicate data between the server and client.',
         link: 'https://github.com/L3G5ND/Roblox-Replicator',
       },
       {
         name: 'Roblox-Networker',
+        languages: ['Lua'],
+        stack: ['Roblox', 'Rojo', 'Wally'],
         description: 'An easy to use Networking library for Roblox Lua.',
         link: 'https://github.com/L3G5ND/Roblox-Networker',
       },

@@ -5,15 +5,36 @@ import RobloxCollection from '@/components/RobloxCollection';
 import WorkSwitcher from '@/components/WorkSwitcher';
 export const metadata = { title: 'Work' };
 export default function Portfolio() {
+  const projects = [
+    ...Config.projects,
+    ...Config.roblox.games,
+    ...Config.roblox.libraries,
+    ...Config.roblox.projects,
+  ];
+  const languages = new Set([
+    ...Config.languages,
+    ...projects.flatMap((project) => project.languages || []),
+  ]);
+  const skills = [
+    ...new Set([
+      ...languages,
+      ...Config.skills,
+      ...projects.flatMap((project) => project.stack || []),
+    ]),
+  ];
   const software = (
     <>
       <ProjectCards />
       <section className="section" style={{ marginTop: 45 }}>
         <h2>Skills</h2>
         <div className="skills-grid">
-          {Config.skills.map((s) => (
-            <div className="skill-block" tabIndex={0} key={s}>
-              {s}
+          {skills.map((skill) => (
+            <div
+              className={`skill-block ${languages.has(skill) ? 'skill-language' : ''}`}
+              tabIndex={0}
+              key={skill}
+            >
+              {skill}
             </div>
           ))}
         </div>

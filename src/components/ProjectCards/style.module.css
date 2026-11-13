@@ -77,23 +77,6 @@
 .privateButton svg {
   flex-shrink: 0;
 }
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: auto;
-  padding-top: 6px;
-}
-.tags span {
-  max-width: 100%;
-  overflow-wrap: anywhere;
-  font-size: 12px;
-  color: #e3d3f1;
-  background: #af7fda12;
-  border: 1px solid #5a426e;
-  border-radius: 6px;
-  padding: 6px 9px;
-}
 @media (max-width: 800px) {
   .grid {
     grid-template-columns: 1fr;

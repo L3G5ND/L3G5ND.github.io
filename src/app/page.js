@@ -2,14 +2,12 @@ import assetPath from '@/lib/assetPath';
 import Link from 'next/link';
 import Image from 'next/image';
 import Config from '@config';
-import ProjectCards from '@/components/ProjectCards';
 import ArrowRight from '@/components/ArrowRight';
-import SkillsMarquee from '@/components/SkillsMarquee';
 import styles from './style.module.css';
 export default function Home() {
   return (
     <>
-      <section className={styles.hero}>
+      <section className={styles.hero} data-home-page>
         <div className={styles.aboutColumn}>
           <section className={styles.about} aria-labelledby="about-title">
             <div className={styles.aboutTop}>
@@ -98,17 +96,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
-      <SkillsMarquee skills={Config.skills} />
-      <section className={styles.work}>
-        <div className="section-title">
-          <h2>Featured Work</h2>
-          <Link className="text-link arrow-link" href="/portfolio">
-            View all work
-            <ArrowRight />
-          </Link>
-        </div>
-        <ProjectCards />
       </section>
     </>
   );
