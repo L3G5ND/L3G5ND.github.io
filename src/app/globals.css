@@ -450,3 +450,18 @@ body:has([data-home-page]) footer {
   margin-top: 0;
   padding-block: 20px;
 }
+
+.skill-code-symbol {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  color: #8fd6e5;
+}
+.skill-block {
+  gap: 8px;
+}
+@media (max-width: 800px), (max-aspect-ratio: 3/4) {
+  body:has([data-home-page]) footer,
+  body:has([data-contact-page]) footer {
+    margin-top: 40px;
+  }
+}

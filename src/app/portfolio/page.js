@@ -5,12 +5,7 @@ import RobloxCollection from '@/components/RobloxCollection';
 import WorkSwitcher from '@/components/WorkSwitcher';
 export const metadata = { title: 'Work' };
 export default function Portfolio() {
-  const projects = [
-    ...Config.projects,
-    ...Config.roblox.games,
-    ...Config.roblox.libraries,
-    ...Config.roblox.projects,
-  ];
+  const projects = Config.projects;
   const languages = new Set([
     ...Config.languages,
     ...projects.flatMap((project) => project.languages || []),
@@ -34,7 +29,12 @@ export default function Portfolio() {
               tabIndex={0}
               key={skill}
             >
-              {skill}
+              {languages.has(skill) && (
+                <span className="skill-code-symbol" aria-hidden="true">
+                  {'</>'}
+                </span>
+              )}
+              <span>{skill}</span>
             </div>
           ))}
         </div>

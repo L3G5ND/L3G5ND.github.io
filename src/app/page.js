@@ -48,7 +48,7 @@ export default function Home() {
           <section className={styles.origin}>
             <h3>It started with Roblox.</h3>
             <p>
-              Consistently developing on Roblox for over 6 years. What started as an
+              Consistently developing on Roblox for over 6 years. Roblox Studio is what got me into programming, what started as a little
               interest quickly became a passion.
             </p>
             <Link className="text-link arrow-link" href="/portfolio?view=roblox">
